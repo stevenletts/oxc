@@ -1457,6 +1457,7 @@ export interface DummyRuleMap {
   "typescript/no-extraneous-class"?: RuleNoConfig | [AllowWarnDeny, NoExtraneousClass];
   "typescript/no-floating-promises"?: RuleNoConfig | [AllowWarnDeny, NoFloatingPromisesConfig];
   "typescript/no-for-in-array"?: RuleNoConfig;
+  "typescript/no-generated-empty-object-type"?: RuleNoConfig;
   "typescript/no-implied-eval"?: RuleNoConfig;
   "typescript/no-import-type-side-effects"?: RuleNoConfig;
   "typescript/no-inferrable-types"?: RuleNoConfig | [AllowWarnDeny, NoInferrableTypes];
@@ -1609,6 +1610,7 @@ export interface DummyRuleMap {
   "unicorn/number-literal-case"?: RuleNoConfig;
   "unicorn/numeric-separators-style"?: RuleNoConfig | [AllowWarnDeny, NumericSeparatorsStyleConfig];
   "unicorn/prefer-add-event-listener"?: RuleNoConfig;
+  "unicorn/prefer-add-event-listener-options"?: RuleNoConfig;
   "unicorn/prefer-array-find"?: RuleNoConfig;
   "unicorn/prefer-array-flat"?: RuleNoConfig;
   "unicorn/prefer-array-flat-map"?: RuleNoConfig;

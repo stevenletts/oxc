@@ -267,6 +267,7 @@ pub(crate) mod typescript {
     pub mod no_extraneous_class;
     pub mod no_floating_promises;
     pub mod no_for_in_array;
+    pub mod no_generated_empty_object_type;
     pub mod no_implied_eval;
     pub mod no_import_type_side_effects;
     pub mod no_inferrable_types;
@@ -633,6 +634,7 @@ pub(crate) mod unicorn {
     pub mod number_literal_case;
     pub mod numeric_separators_style;
     pub mod prefer_add_event_listener;
+    pub mod prefer_add_event_listener_options;
     pub mod prefer_array_find;
     pub mod prefer_array_flat;
     pub mod prefer_array_flat_map;

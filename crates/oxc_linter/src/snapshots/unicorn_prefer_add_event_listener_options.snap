@@ -1,0 +1,75 @@
+---
+source: crates/oxc_linter/src/tester.rs
+---
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: true}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:44]
+ 1 │ window.addEventListener("click", listener, true)
+   ·                                            ────
+   ╰────
+  help: Pass `{capture: true}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: false}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:44]
+ 1 │ window.addEventListener("click", listener, false)
+   ·                                            ─────
+   ╰────
+  help: Pass `{capture: false}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: true}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:45]
+ 1 │ window.addEventListener("click", listener, (true))
+   ·                                             ────
+   ╰────
+  help: Pass `{capture: true}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: true}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:44]
+ 1 │ window.addEventListener("click", () => {}, true)
+   ·                                            ────
+   ╰────
+  help: Pass `{capture: true}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: false}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:50]
+ 1 │ window.addEventListener("click", function () {}, false)
+   ·                                                  ─────
+   ╰────
+  help: Pass `{capture: false}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: true}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:51]
+ 1 │ document.body.addEventListener("click", listener, true)
+   ·                                                   ────
+   ╰────
+  help: Pass `{capture: true}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: false}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:46]
+ 1 │ (window).addEventListener("click", listener, false)
+   ·                                              ─────
+   ╰────
+  help: Pass `{capture: false}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: true}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:61]
+ 1 │ window.addEventListener("click", listener, /* useCapture */ true)
+   ·                                                             ────
+   ╰────
+  help: Pass `{capture: true}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: true}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:1:44]
+ 1 │ window.addEventListener("click", listener, true /* useCapture */)
+   ·                                            ────
+   ╰────
+  help: Pass `{capture: true}` as an options object.
+
+  ⚠ unicorn(prefer-add-event-listener-options): Prefer `{capture: true}` over a boolean `useCapture` argument.
+   ╭─[prefer_add_event_listener_options.tsx:4:17]
+ 3 │                 listener,
+ 4 │                 true
+   ·                 ────
+ 5 │             )
+   ╰────
+  help: Pass `{capture: true}` as an options object.
